@@ -1,0 +1,9 @@
+*.pyc
+*.bak
+*.log
+*.img
+*.dmg
+*.iso
+*.tar.gz
+__pycache__/
+backups/
