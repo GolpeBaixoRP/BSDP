@@ -1,0 +1,13 @@
+[Unit]
+Description=Custom BSDP server
+After=network-online.target
+Wants=network-online.target netboot-http.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/python2.7 /opt/bsdpy/bsdpserver.py
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
